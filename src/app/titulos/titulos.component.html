@@ -1,0 +1,36 @@
+<p>titulos works!</p>
+
+<!-- <h1> Hola yo soy {{alumno.nombre}} {{alumno.apellido}} </h1>
+
+<img [src]="imagen" alt="">
+
+<input type="text" [(ngModel)]="inputnuevo">
+
+<p>{{inputnuevo}}</p> -->
+
+<label> Email
+    <input type="text" (ngModelChange)="escribircorreo()" [(ngModel)]="correo">
+</label>
+<label> Password
+    <input type="password" (keydown)="ingresar($event)" [(ngModel)]="contrasena">
+</label>
+
+ <button (dblclick)="ingresar($event)">Iniciar</button>
+
+<button (dblclick)= "llamarAlert()">Doble click</button>
+
+<br>
+<br>
+
+<!--<input type="text" (input)="escribir($event)">
+
+<br>
+<br>
+
+<input type="text" (focus)="colorearFondo($event)">  -->
+
+<!-- 
+<img [src]="imagen" (mouseenter)="Cambiartamanio($event)" alt=""> -->
+
+<img [src]="imagen" (mouseenter)="Cambiartamanio($event)" (mouseleave)="aumentartamanio($event)" alt="">
+
