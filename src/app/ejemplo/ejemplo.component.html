@@ -1,0 +1,31 @@
+<div class="container">
+    <form action="">
+        <div class="form-group">
+            <label for="">Nombre</label>
+            <input type="text" name="nombre" id="" class="form-control" [(ngModel)]="alumno.nombre">
+        </div>
+        <div class="form-group">
+            <label for="">Apellido</label>
+            <input type="text" name="apellido" id="" class="form-control" [(ngModel)]="alumno.apellido">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="">Tiene Excelencia</label>
+            <br>
+            <select name="excelencia" id="" [(ngModel)]="alumno.excelencia">
+                <option value="true">Si</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+        <br>
+        <button class="btn btn-primary" (click)="agregarAlumno()">Agregar</button>
+    </form>
+
+    <br>
+
+    <div class="card" *ngFor="let alm of listadoAlumnos">
+        <div class="card-body">
+            <span [ngClass]="{'excelencia': alm.excelencia}">alumno</span>: {{alm.nombre}} {{alm.apellido}}
+        </div>
+    </div>
+</div>
