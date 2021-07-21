@@ -1,0 +1,21 @@
+<!-- <div *ngIf = "!cargando">
+    <p>
+        Termino de Cargar
+    </p>
+</div>
+
+<img *ngIf="cargando" src="https://acegif.com/wp-content/uploads/loading-2.gif">
+
+
+<button (click) = "alternarCargando()">alternar cargando</button> -->
+
+<div *ngFor="let nombre of nombres">
+    <p>Hola mi nombre es: {{nombre}} </p>
+</div>
+
+<div *ngFor="let producto of productos" class="producto">
+    <p>El producto es: {{producto.nombre}} </p>
+    <p>Su stock es: {{producto.stock}} </p>
+    <p>Su fabricante es: {{producto.fabricante}} </p>
+    <p>Su fecha de vencimiento es: {{producto.fechaVenci}} </p>
+</div>
