@@ -7,13 +7,21 @@ import { AppComponent } from './app.component';
 import { TitulosComponent } from './titulos/titulos.component';
 import { DirectivaComponent } from './directiva/directiva.component';
 import { EjemploComponent } from './ejemplo/ejemplo.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { ContinuaraPipe } from './continuara.pipe';
+import { Pagina404Component } from './pagina404/pagina404.component';
+import { EncabezadoComponent } from './encabezado/encabezado.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TitulosComponent,
     DirectivaComponent,
-    EjemploComponent
+    EjemploComponent,
+    PipesComponent,
+    ContinuaraPipe,
+    Pagina404Component,
+    EncabezadoComponent
   ],
   imports: [
     BrowserModule,
