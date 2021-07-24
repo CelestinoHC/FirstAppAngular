@@ -11,6 +11,11 @@ import { PipesComponent } from './pipes/pipes.component';
 import { ContinuaraPipe } from './continuara.pipe';
 import { Pagina404Component } from './pagina404/pagina404.component';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
+import { UsuarioComponent } from './usuario/usuario.component';
+import { EditarUsuarioComponent } from './usuario/editar-usuario/editar-usuario.component';
+import { AgregarUsuarioComponent } from './usuario/agregar-usuario/agregar-usuario.component';
+import { ArticuloComponent } from './articulo/articulo.component';
+import { ArticuloDetalleComponent } from './articulo-detalle/articulo-detalle.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { EncabezadoComponent } from './encabezado/encabezado.component';
     PipesComponent,
     ContinuaraPipe,
     Pagina404Component,
-    EncabezadoComponent
+    EncabezadoComponent,
+    UsuarioComponent,
+    EditarUsuarioComponent,
+    AgregarUsuarioComponent,
+    ArticuloComponent,
+    ArticuloDetalleComponent
   ],
   imports: [
     BrowserModule,
